@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Sort">
+        <group android:id="@+id/sorting">
+            <menu>
+                <item
+                    android:id="@+id/Bubble"
+                    android:title="bubble sort">
+                    <group android:id="@+id/sortingTypesBubble">
+                        <menu>
+                            <item
+                                android:id="@+id/bubbleAsc"
+                                android:title="Ascending" />
+                            <item
+                                android:id="@+id/bubbleDsc"
+                                android:title="descending" />
+                        </menu>
+                    </group>
+                </item>
+                <item
+                    android:id="@+id/insertion"
+                    android:title="insertion sort">
+                    <group android:id="@+id/sortingTypesIns">
+                        <menu>
+                            <item
+                                android:id="@+id/insertionAsc"
+                                android:title="Ascending" />
+                            <item
+                                android:id="@+id/insertionDsc"
+                                android:title="descending" />
+                        </menu>
+                    </group>
+                </item>
+            </menu>
+        </group>
+    </item>
+    <item
+        android:id="@+id/undo"
+        android:title="undo" />
+    <item
+        android:id="@+id/redo"
+        android:title="redo" />
+
+</menu>
