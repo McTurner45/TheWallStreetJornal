@@ -13,14 +13,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.Holder>{
-
+//declaring variables
     ArrayList<Journal> journals;
     Context mContext;
 
+    //constructor
     public Adapter(ArrayList<Journal> journals) {
         this.journals=journals;
     }
 
+    //initializing recyclerview variables and objects
     @NonNull
     @Override
     public Holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -50,22 +52,28 @@ public class Adapter extends RecyclerView.Adapter<Adapter.Holder>{
             public void onClick(View v) {
                 Intent intent = new Intent(mContext, JournalActivity.class);
                 intent.putExtra("journalId", journalId);
+                intent.putExtra("title", journal.getTitle());
+                intent.putExtra("date", journal.getDate());
+                intent.putExtra("content", journal.getContent());
                 mContext.startActivity(intent);
             }
         });
     }
+
 
     @Override
     public int getItemCount() {
         return journals.size();
     }
 
+    //connecting our view resurces to the adapter
     public class Holder extends RecyclerView.ViewHolder{
 
         TextView title;
         TextView date;
 
         View view;
+
 
         public Holder(@NonNull View itemView) {
             super(itemView);
