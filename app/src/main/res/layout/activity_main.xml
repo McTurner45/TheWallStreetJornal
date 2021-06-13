@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/my_box"
     android:padding="20dp"
     tools:context=".MainActivity">
 
@@ -32,11 +33,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_gravity="end|bottom"
+        android:layout_alignParentEnd="true"
         android:layout_margin="16dp"
         android:contentDescription="AddNewJornal"
         android:layout_marginBottom="20dp"
-        android:src="@drawable/ic_baseline_add_24" />
+        android:src="@drawable/ic_baseline_create_24"
+        android:layout_alignParentRight="true" />
 
 
 </RelativeLayout>

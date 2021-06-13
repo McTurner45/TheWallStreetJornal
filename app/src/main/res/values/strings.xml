@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">The WallStreet Jornal</string>
+    <string name="app_name">The WallStreet Journal</string>
     <string name="content">In Android, EditText is a standard entry widget in android apps. It is an overlay over TextView that configures itself to be editable. EditText is a subclass of TextView with text editing operations. We often use EditText in our applications in order to provide an input or text field, especially in forms. The most simple example of EditText is Login or Sign-in form.</string>
 </resources>
